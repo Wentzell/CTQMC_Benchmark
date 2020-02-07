@@ -32,5 +32,5 @@ done
 ```bash
 git clone https://github.com/TRIQS/benchmarks --depth 1
 cd benchmarks/Sr2RuO4/scripts
-mpirun -np 128 cthyb | grep "Simulation lasted"
+mpirun -np 128 cthyb 2> /dev/null | grep "Simulation lasted"
 ```
