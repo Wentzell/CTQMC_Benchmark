@@ -25,9 +25,15 @@ for i in triqs cthyb tprf; do
 done
 ```
 
-## Running the benchmark
+## Fetching the benchmark
+
 ```bash
 git clone https://github.com/TRIQS/benchmarks --depth 1
 cd benchmarks/Sr2RuO4/scripts
-mpirun -np 128 cthyb 2> /dev/null | grep "Simulation lasted"
+```
+
+## Running the benchmark
+
+```bash
+mpirun cthyb 2> /dev/null | grep "Simulation lasted"
 ```
